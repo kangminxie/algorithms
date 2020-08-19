@@ -4,19 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class QueueUsingTwoStack implements QueueInterface<Integer> {
+public class QueueUsingTwoStacks implements QueueInterface<Integer> {
 
     private Stack<Integer> stack1;
     private Stack<Integer> stack2;
 
-    QueueUsingTwoStack() {
+    QueueUsingTwoStacks() {
         stack1 = new Stack<>();
         stack2 = new Stack<>();
     }
 
     // initially, push all items to stack 1, |<s1>| a b c d, |<s2>| empty
     // then push all to stack2, |<s2>| d b c a, |<s1>| empty
-    QueueUsingTwoStack(int[] array) {
+    QueueUsingTwoStacks(int[] array) {
         this();
         for (int a : array) {
             stack1.push(a);
@@ -24,7 +24,7 @@ public class QueueUsingTwoStack implements QueueInterface<Integer> {
         cleanLoadingStack();
     }
 
-    QueueUsingTwoStack(List<Integer> arrayList) {
+    QueueUsingTwoStacks(List<Integer> arrayList) {
         this();
         arrayList.forEach( a -> stack1.push(a));
         cleanLoadingStack();
@@ -99,14 +99,14 @@ public class QueueUsingTwoStack implements QueueInterface<Integer> {
 
     public static void main(final String[] args) {
         final int[] array = {1, 2, 3, 4, 5};
-        QueueUsingTwoStack q = new QueueUsingTwoStack(array);
+        QueueUsingTwoStacks q = new QueueUsingTwoStacks(array);
         q.print(); // 1->2->3->4->5->end
         System.out.println(q.peek()); // 1
 
         q.enqueue(6);
         q.print(); // 1->2->3->4->5->6->end
 
-        q.dequeue();
+        System.out.println(q.dequeue()); // 1;
         q.print(); // 2->3->4->5->6->end
         System.out.println(q.peek()); // 2
 

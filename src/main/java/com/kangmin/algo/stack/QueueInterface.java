@@ -1,4 +1,4 @@
-package com.kangmin.algo.csce.queue;
+package com.kangmin.algo.stack;
 
 interface QueueInterface<T> {
 
