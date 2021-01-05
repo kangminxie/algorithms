@@ -10,7 +10,7 @@ package com.kangmin.algo.sort;
  * bubbleDown();
  */
 
-public class ArrayHeap<T extends Comparable> {
+public class ArrayHeap<T extends Comparable<T>> {
     private T[] heap;        //instance variable, array
     private int tailIndex;    //instance variable, index for to be added
     private static final int DEF_SIZE = 10001;

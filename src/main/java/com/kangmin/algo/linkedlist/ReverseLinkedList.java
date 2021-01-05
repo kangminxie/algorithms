@@ -17,6 +17,7 @@ public class ReverseLinkedList {
             head = post;
             post = post.next;
         }
+
         head.next = prev;
         return head;
     }
@@ -54,6 +55,16 @@ public class ReverseLinkedList {
     }
 
     public static void main(String[] args) {
+        ListNode generated = ListUtility.generateLinkedListFromArray(new int[] {1,2,3,4});
+        ListUtility.printLinkedList(generated);
 
+        ListNode reversed = reverseList(generated);
+        ListUtility.printLinkedList(reversed);
+
+        ListNode recovered = reverseListII(reversed);
+        ListUtility.printLinkedList(recovered);
+
+        ListNode reversed2 = reverseListRecursive(recovered);
+        ListUtility.printLinkedList(reversed2);
     }
 }

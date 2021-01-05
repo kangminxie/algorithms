@@ -14,7 +14,7 @@ package com.kangmin.algo.csce.tree;
  *
  */
 
-public class ArrayBSTree<T extends Comparable> {
+public class ArrayBSTree<T extends Comparable<T>> {
     //instance variables
     private T[] tree;
     private static final int DEF_SIZE = 1024;

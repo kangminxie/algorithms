@@ -6,8 +6,8 @@ import java.util.Stack;
 
 public class QueueUsingTwoStacks implements QueueInterface<Integer> {
 
-    private Stack<Integer> stack1;
-    private Stack<Integer> stack2;
+    private final Stack<Integer> stack1;
+    private final Stack<Integer> stack2;
 
     QueueUsingTwoStacks() {
         stack1 = new Stack<>();

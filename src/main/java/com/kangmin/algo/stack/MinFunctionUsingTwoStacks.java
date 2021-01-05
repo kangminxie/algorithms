@@ -8,8 +8,8 @@ public class MinFunctionUsingTwoStacks {
 
     // |<s1>| 2 1 3 4
     // |<s2>| 2 1 1 1
-    private Stack<Integer> stack1;
-    private Stack<Integer> stack2;
+    private final Stack<Integer> stack1;
+    private final Stack<Integer> stack2;
 
     MinFunctionUsingTwoStacks() {
         stack1 = new Stack<>();

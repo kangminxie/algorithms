@@ -108,7 +108,7 @@ public class TreeTraversal {
     public static void main(String[] args) {
         TreeTraversal instance = new TreeTraversal();
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
-        TreeNode root = TreeUtility.generateBSTfromArray(arr);
+        TreeNode root = TreeUtility.generateBSTFromArray(arr);
         //        4
         //     2     6
         //  1   3  5   7

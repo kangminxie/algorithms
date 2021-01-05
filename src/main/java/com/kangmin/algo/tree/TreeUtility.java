@@ -14,7 +14,7 @@ class TreeUtility {
      * @param a an int array
      * @return root node of the tree
      */
-    static TreeNode generateBSTfromArray(int[] a) {
+    static TreeNode generateBSTFromArray(int[] a) {
         if (a == null || a.length == 0) {
             return null;
         }
@@ -162,7 +162,7 @@ class TreeUtility {
 
     public static void main(String[] args) {
         int[] a = new int[]{5, 6, 2, 1, 3, 7, 4};
-        TreeNode root = generateBSTfromArray(a);
+        TreeNode root = generateBSTFromArray(a);
         List<List<Integer>> list = levelOrderTraversal(root);
         System.out.println("Testing tree from Array");
         System.out.println(list);

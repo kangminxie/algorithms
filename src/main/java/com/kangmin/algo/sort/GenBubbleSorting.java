@@ -2,7 +2,7 @@ package com.kangmin.algo.sort;
 
 public class GenBubbleSorting {
 
-    public static <T extends Comparable> T[] bubbleSortGen(T[] a) {
+    public static <T extends Comparable<T>> T[] bubbleSortGen(T[] a) {
         int size = a.length;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size - 1 - i; j++) {

@@ -24,33 +24,23 @@ public class MergeSorting {
     }
 
     private static void merge(int[] left, int[] right, int[] a) {
-        int leftSize = left.length;
-        int rightSize = right.length;
-
         int i = 0;
         int j = 0;
         int k = 0;
-        while (i < leftSize && j < rightSize) {
+
+        while (i < left.length && j < right.length) {
             if (left[i] <= right[j]) {
-                a[k] = left[i];
-                i++;
-                k++;
+                a[k++] = left[i++];
             } else {
-                a[k] = right[j];
-                j++;
-                k++;
+                a[k++] = right[j++];
             }
         }
 
-        while (i < leftSize) {
-            a[k] = left[i];
-            i++;
-            k++;
+        while (i < left.length) {
+            a[k++] = left[i++];
         }
-        while (j < rightSize) {
-            a[k] = right[j];
-            j++;
-            k++;
+        while (j < right.length) {
+            a[k++] = right[j++];
         }
     }
 
