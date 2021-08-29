@@ -1,4 +1,4 @@
-package com.kangmin.algo.bfs;
+package main.java.com.kangmin.algo.bfs;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -11,9 +11,9 @@ class Node {
     public Node() {
     }
 
-    public Node(int _val, List<Node> _children) {
-        val = _val;
-        children = _children;
+    public Node(int val, List<Node> children) {
+        val = val;
+        children = children;
     }
 };
 

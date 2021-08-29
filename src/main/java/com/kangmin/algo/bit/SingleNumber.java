@@ -1,4 +1,4 @@
-package com.kangmin.algo.bit;
+package main.java.com.kangmin.algo.bit;
 
 public class SingleNumber {
 

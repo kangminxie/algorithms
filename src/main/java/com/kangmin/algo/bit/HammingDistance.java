@@ -1,4 +1,4 @@
-package com.kangmin.algo.bit;
+package main.java.com.kangmin.algo.bit;
 
 public class HammingDistance {
     //The Hamming distance between two integers is the number of positions

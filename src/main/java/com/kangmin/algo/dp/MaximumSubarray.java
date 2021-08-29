@@ -1,4 +1,4 @@
-package com.kangmin.algo.dp;
+package main.java.com.kangmin.algo.dp;
 
 public class MaximumSubarray {
 

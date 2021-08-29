@@ -5,6 +5,7 @@
 target
 ./target
 target/*
+out
 
 # Log file
 *.log

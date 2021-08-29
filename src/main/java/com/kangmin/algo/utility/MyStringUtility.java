@@ -1,4 +1,4 @@
-package com.kangmin.algo.utility;
+package main.java.com.kangmin.algo.utility;
 
 public class MyStringUtility {
 

@@ -1,7 +1,8 @@
-package com.kangmin.algo.sort;
+package main.java.com.kangmin.algo.sort;
 
 public class SelectionSorting {
 
+    // current
     public static int[] selectionSortInt(int[] a) {
         for (int i = 0; i < a.length - 1; i++) {
             int minIndex = i;
@@ -23,16 +24,20 @@ public class SelectionSorting {
         arr[j] = temp;
     }
 
-    private static void printout(int[] arr) {
+    private static void printArr(int[] arr) {
+        System.out.print("[ ");
         for (int value : arr) {
             System.out.print(value + " ");
         }
-        System.out.println();
+        System.out.println("]");
     }
 
     public static void main(final String[] args) {
         final int[] testArray = {5, 4, 8, 3, 6, 2, 7, 9, 1};
+        System.out.println("Address of testArray is: " + testArray);
+        printArr(testArray);
         final int[] sorted = selectionSortInt(testArray);
-        printout(sorted);
+        System.out.println("Address of sorted is: " + sorted);
+        printArr(sorted);
     }
 }

@@ -1,4 +1,4 @@
-package com.kangmin.algo.special;
+package main.java.com.kangmin.algo.special;
 
 public class TestInnerClass {
 

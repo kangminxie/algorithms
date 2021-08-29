@@ -1,4 +1,4 @@
-package com.kangmin.algo.dfs;
+package main.java.com.kangmin.algo.dfs;
 
 import java.util.ArrayList;
 import java.util.List;

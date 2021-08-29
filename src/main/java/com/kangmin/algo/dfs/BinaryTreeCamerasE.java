@@ -1,10 +1,10 @@
-package com.kangmin.algo.dfs;
+package main.java.com.kangmin.algo.dfs;
 
 public class BinaryTreeCamerasE {
 
-    private int NOT_MONITORED = 0;
-    private int MONITORED_NOCAM = 1;
-    private int MONITORED_WITHCAM = 2;
+    private final int NOT_MONITORED = 0;
+    private final int MONITORED_NOCAM = 1;
+    private final int MONITORED_WITHCAM = 2;
     private int cameras = 0;
 
     public int minCameraCover(TreeNode root) {

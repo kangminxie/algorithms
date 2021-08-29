@@ -1,4 +1,4 @@
-package com.kangmin.algo.search;
+package main.java.com.kangmin.algo.search;
 
 public class BinarySearchAny<T extends Comparable<T>> {
 

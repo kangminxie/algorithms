@@ -1,4 +1,4 @@
-package com.kangmin.algo.twopointer;
+package main.java.com.kangmin.algo.twopointer;
 
 public class SquaresOfSortedArray {
     // A is sorted, e.g. -3, -1, 0, 2

@@ -1,4 +1,4 @@
-package com.kangmin.algo.sort;
+package main.java.com.kangmin.algo.sort;
 
 public class BubbleSorting {
 
@@ -121,7 +121,7 @@ public class BubbleSorting {
         bubbleSortIntV2e(testArray2e);
         printout(testArray2e);
 
-        String test = "bshiflsjdh_cda";
+        String test = "bshiflsjdhcda";
         String[] a = test.split("");
         System.out.println(test);
         bubbleSortString(a);

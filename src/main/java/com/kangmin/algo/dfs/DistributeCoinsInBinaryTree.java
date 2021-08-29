@@ -1,4 +1,4 @@
-package com.kangmin.algo.dfs;
+package main.java.com.kangmin.algo.dfs;
 
 public class DistributeCoinsInBinaryTree {
 

@@ -1,7 +1,8 @@
-package com.kangmin.algo.sort;
+package main.java.com.kangmin.algo.sort;
 
 public class InsertionSorting {
 
+    // only exchange once
     public static int[] insertionSortInt(int[] a) {
         if (a == null || a.length <= 1) {
             return a;
@@ -15,6 +16,18 @@ public class InsertionSorting {
                 j = j - 1;
             }
             a[j + 1] = temp;
+        }
+        return a;
+    }
+
+    // keep exchanging util done
+    public static int[] insertionSortV1(int[] a) {
+        for (int i = 1; i < a.length; i++) {
+            int j = i;
+            while (j > 0 && a[j - 1] > a[j]) {
+                swap(a, j - 1, j);
+                j--;
+            }
         }
         return a;
     }
@@ -42,7 +55,6 @@ public class InsertionSorting {
     }
 
     public static int[] shellSortInt(int[] a) {
-
         int N = a.length;
         int h = 1;
 

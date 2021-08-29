@@ -1,4 +1,4 @@
-package com.kangmin.algo.greedy;
+package main.java.com.kangmin.algo.greedy;
 
 import java.util.PriorityQueue;
 

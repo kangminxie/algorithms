@@ -1,4 +1,4 @@
-package com.kangmin.algo.sort;
+package main.java.com.kangmin.algo.sort;
 
 public class TestHeapSort {
 

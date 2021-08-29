@@ -1,4 +1,4 @@
-package com.kangmin.algo.twopointer;
+package main.java.com.kangmin.algo.twopointer;
 
 import java.util.HashMap;
 import java.util.Map;
