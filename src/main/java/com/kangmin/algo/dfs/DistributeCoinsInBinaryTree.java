@@ -10,7 +10,9 @@ public class DistributeCoinsInBinaryTree {
     }
 
     private void postOrderTraversal(TreeNode curr, TreeNode parent) {
-        if (curr == null) return;
+        if (curr == null) {
+            return;
+        }
         postOrderTraversal(curr.left, curr);
         postOrderTraversal(curr.right, curr);
         if (curr.val == 0) {
