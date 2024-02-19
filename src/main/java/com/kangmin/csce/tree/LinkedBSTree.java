@@ -47,7 +47,6 @@ public class LinkedBSTree<T extends Comparable<T>> {
         } else if (data.compareTo(aNode.data) >= 0) {
             aNode.rightChild = insert(aNode.rightChild, data);
         }
-
         return aNode;
     }
 
