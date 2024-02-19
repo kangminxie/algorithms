@@ -1,5 +1,7 @@
 package main.java.com.kangmin.algo.sort;
 
+import java.util.Arrays;
+
 public class SelectionSorting {
 
     // current
@@ -34,10 +36,10 @@ public class SelectionSorting {
 
     public static void main(final String[] args) {
         final int[] testArray = {5, 4, 8, 3, 6, 2, 7, 9, 1};
-        System.out.println("Address of testArray is: " + testArray);
+        System.out.println("Address of testArray is: " + Arrays.toString(testArray));
         printArr(testArray);
         final int[] sorted = selectionSortInt(testArray);
-        System.out.println("Address of sorted is: " + sorted);
+        System.out.println("Address of sorted is: " + Arrays.toString(sorted));
         printArr(sorted);
     }
 }

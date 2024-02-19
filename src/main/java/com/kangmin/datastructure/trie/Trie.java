@@ -4,7 +4,7 @@ public class Trie {
 
     private static final short R = 26;
 
-    static class TrieNode {
+    private static class TrieNode {
 
         private boolean isEnd;
         private final TrieNode[] links;

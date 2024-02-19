@@ -3,7 +3,7 @@ package main.java.com.kangmin.algo.sort;
 public class BubbleSorting {
 
     public static void bubbleSortIntV0(int[] a) {
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < a.length - 1; i++) {
             // move max to the right
             for (int j = 0; j < a.length - 1 - i; j++) {
                 if (a[j] > a[j + 1]) {
